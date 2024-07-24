@@ -1,0 +1,168 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #efe1d1;
+}
+
+.nav1 + nav {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.nav1 + nav a {
+    text-decoration: none;
+    margin-right: 5px;
+    color: black; /* Set default color to black */
+}
+
+.nav1 + nav a:hover,
+.nav1 + nav a:focus,
+.nav1 + nav a:active,
+.nav1 + nav i:hover,
+.nav1 + nav i:focus,
+.nav1 + nav i:active {
+    color: #543310; /* Set color to red on hover, focus, and active states */
+}
+
+.nav1 + nav i {
+    color: gray; /* Set the home icon color to gray */
+    font-size: 18px;
+    position: relative;
+    top: 20px;
+}
+
+.nav1 + nav span a {
+    color: black; /* Set the current page link color to black */
+    text-decoration: none;
+    position: relative;
+    top: 20px;
+}
+
+.nav1 + nav span a:hover,
+.nav1 + nav span a:focus,
+.nav1 + nav span a:active {
+    color: #543310; /* Set color to red on hover, focus, and active states */
+}
+
+.nav1 + nav > *:not(:first-child) {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.nav1 + nav > *:nth-child(2) {
+    color: gray; /* Set the separator color to gray */
+}
+
+.nav1 + nav .terms-of-service {
+    font-size: 18px; /* Increase the font size */
+    position: relative;
+    top: 20px; /* Move the text 5px lower */
+}
+
+.nav1 + nav .separator {
+    font-size: 18px;
+    color:black;
+    vertical-align: middle;
+    margin-left: 5px;
+    position: relative;
+    top: 20px; 
+}
+
+
+
+
+.Policy {
+    display: flex;
+    margin: 20px;
+}
+
+.sidebar-wrapper {
+    flex: 0 0 250px; /* Set the flex-basis to a fixed width */
+    max-width: 250px; /* Ensure the sidebar does not exceed this width */
+    padding: 20px;
+    background-color: #efe1d1;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+.sidebar-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.sidebar-table a {
+    color: black; 
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.sidebar-table th,
+.sidebar-table td {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: left;
+}
+
+.sidebar-table th {
+    background-color: #543310;
+    text-align: center;
+    color: white;
+}
+
+.sidebar-table th:hover {
+    color: #543310; 
+}
+
+.sidebar-table a:hover {
+    color: #543310;
+}
+
+
+.TermsofServicePolicy {
+    flex: 1;
+    padding: 20px;
+    background-color: white; 
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.TermsofServicePolicy h1 {
+    color: #333333;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center; 
+}
+
+.TermsofServicePolicy p {
+    color: #666666;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.TermsofServicePolicy .left-align {
+    text-align: center; 
+}
+
+.TermsofServicePolicy ol {
+    list-style-type: none; 
+    padding-left: 0;
+}
+
+.TermsofServicePolicy ol li {
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.TermsofServicePolicy ol li:before {
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none; 
+}

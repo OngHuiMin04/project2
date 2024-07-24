@@ -1,0 +1,322 @@
+.nav1 + nav {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.nav1 + nav a {
+    text-decoration: none;
+    margin-right: 5px;
+    color: black; 
+}
+
+.nav1 + nav a:hover,
+.nav1 + nav a:focus,
+.nav1 + nav a:active,
+.nav1 + nav i:hover,
+.nav1 + nav i:focus,
+.nav1 + nav i:active {
+    color: #6f4e37; 
+}
+
+.nav1 + nav i {
+    color: gray; 
+}
+
+.nav1 + nav span a {
+    color: black; 
+    text-decoration: none;
+}
+
+.nav1 + nav span a:hover,
+.nav1 + nav span a:focus,
+.nav1 + nav span a:active {
+    color: #6f4e37; 
+}
+
+.nav1 + nav > *:not(:first-child) {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.nav1 + nav > *:nth-child(2) {
+    color: gray; 
+}
+
+.bannerup {
+    width: 100%; /* Make the banner take the full width of the container */
+   text-align: center;
+}
+
+.bannerup img {
+    width: 1500px; /* Make the image take the full width of the banner container */
+    
+}
+
+.search-filter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin: 20px auto; 
+    width: 600px; 
+}
+
+.search-input {
+    width: 90px; /* 调整宽度，留出空间给搜索按钮 */
+    height: 40px; /* 调整高度 */
+    padding: 5px 10px; /* 文本内边距 */
+    border: 1px solid #ccc;
+    border-top-left-radius: 5px; /* 圆角 */
+    background-color: #fff;
+    font-size: 14px;
+    box-sizing: border-box; /* 盒模型设为边框盒 */
+    margin-right: 5px; /* 与过滤按钮的间距 */
+}
+
+.search-button {
+    height: 42px; /* 与输入框高度一致 */
+    padding: 0 15px; /* 调整内边距 */
+    background-color: #6f4e37; /* 背景色 */
+    color: white;
+    border: 1px solid #ccc;
+    border-top-right-radius: 5px; /* 圆角 */
+    cursor: pointer;
+    margin-left:-8px;
+    margin-bottom: 20px;
+}
+
+
+.filter-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    padding: 0 15px; /* 调整内边距 */
+    background-color: #eee4b1; /* 背景色 */
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* 圆角 */
+    cursor: pointer;
+    height: 42px; /* 与输入框高度一致 */
+    margin-left: 15px; /* 与搜索输入框的间距 */
+    margin-bottom: 20px;
+}
+
+.filter-button .fa-sliders-h {
+    margin-right: 5px; /* 图标与文本间距 */
+}
+
+.filter-button .filter-count {
+    background-color: #333; /* 计数背景色 */
+    color: #fff; /* 计数文字颜色 */
+    border-radius: 50%; /* 圆形 */
+    padding: 2px 6px; /* 调整内边距 */
+    margin-left: 5px; /* 文本与计数间距 */
+}
+
+.filter-button:hover {
+    background-color: wheat; /* 悬停时浅色背景 */
+}
+
+
+
+.catalogue {
+    position: relative;
+    padding: 50px;
+    text-align: center;
+    overflow: hidden;
+    background: #efe1d1;
+}
+
+.catalogue h1 {
+    position: relative;
+    padding-bottom: 8px;
+    margin-bottom: 25px;
+    color: black;
+    font-size: 60px; /* 增大标题字体大小 */
+    z-index: 1;
+    text-shadow: 3px 4px 5px grey;
+}
+
+.catalogue .catalogue-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.catalogue .card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    width: calc(33.33% - 20px); /* 调整宽度以每行三个卡片 */
+    min-width: 300px; /* 设置最小宽度以防止卡片过小 */
+    display: flex;
+    flex-direction: column;
+}
+
+.catalogue .card .image {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    flex-shrink: 0;
+}
+
+.catalogue .card .details {
+    padding: 15px;
+    text-align: left;
+}
+
+.catalogue .card .propertyId,
+.catalogue .card .price {
+    font-size: 24px; /* 增大字体大小 */
+    font-weight: bold;
+    margin-bottom: 5px; /* 减少与其他元素之间的间距 */
+    color: #333; /* 设置颜色 */
+}
+
+.catalogue .card .unit-type {
+    font-size: 18px; /* 设置 Whole Unit 的字体大小 */
+    color: #666; /* 设置字体颜色 */
+    margin-bottom: 10px; /* 增加与 info 部分的间距 */
+}
+
+.catalogue .card .info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 18px; /* 增大信息字体大小 */
+}
+
+.catalogue .card .info i {
+    margin-left: 5px;
+}
+
+.catalogue .card .info span {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.catalogue .card .location {
+    font-size: 22px; /* 增大位置字体大小 */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.catalogue .card .address {
+    font-size: 18px; /* 增大地址字体大小 */
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.catalogue .card .button-container {
+    display: flex;
+    gap: 10px; /* 设置按钮之间的间距 */
+    margin-top: 10px; /* 设置与上方内容的间距 */
+}
+
+.catalogue .card .button {
+    display: inline-block;
+    align-items: center;
+    padding: 8px 16px;
+    font-size: 18px; 
+    color: white;
+    background-color: #6f4e37;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: auto; /* 将按钮置于卡片底部 */
+}
+
+.catalogue .card .button i {
+    margin-right: 5px;
+}
+
+.catalogue .card .button:hover {
+    background-color: wheat;
+}
+
+.middlebanner {
+    padding: 10px;
+    align-items: center; /* 居中对齐图片 */
+    margin-bottom: 20px; /* 添加底部距离 */
+}
+  
+.middlebanner img{
+      width: 1300px;
+      height: 170px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 150px; /* 调整高度为更小 */
+}
+
+.mySlides {
+    display: none;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 8px; /* 减少按钮的填充 */
+    margin-top: -16px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px; /* 调整字体大小 */
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+
+  
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}

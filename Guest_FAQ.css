@@ -1,0 +1,132 @@
+.nav1 + nav {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.nav1 + nav a {
+    text-decoration: none;
+    margin-right: 5px;
+    color: black; 
+}
+
+.nav1 + nav a:hover,
+.nav1 + nav a:focus,
+.nav1 + nav a:active,
+.nav1 + nav i:hover,
+.nav1 + nav i:focus,
+.nav1 + nav i:active {
+    color: #6f4e37; 
+}
+
+.nav1 + nav i {
+    color: gray; 
+}
+
+.nav1 + nav span a {
+    color: black; 
+    text-decoration: none;
+}
+
+.nav1 + nav span a:hover,
+.nav1 + nav span a:focus,
+.nav1 + nav span a:active {
+    color: #6f4e37; 
+}
+
+.nav1 + nav > *:not(:first-child) {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.nav1 + nav > *:nth-child(2) {
+    color: gray; 
+}
+
+.bannerup {
+    width: 100%; /* Make the banner take the full width of the container */
+   text-align: center;
+}
+
+.bannerup img {
+    width: 1500px; /* Make the image take the full width of the banner container */
+    
+}
+.whole{
+    background-color: #efe1d1;
+}
+.center {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: justify;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(255, 211, 164);
+    padding: 15px;
+    border-radius: 8px;
+    color: #6f4e37;
+}
+
+.faq-section {
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+    padding-top: 30px;
+}
+
+.faq-question {
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color:  white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-question-btn {
+    width: 100%;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question-btn:focus {
+    outline: none;
+}
+
+.faq-question-btn h3 {
+    color: black;
+    margin-bottom: 0;
+}
+
+.faq-question-btn i {
+    font-size: 16px;
+    color: #444;
+}
+
+.faq.answer p {
+    font-size: 16px;
+    margin-top: 10px;
+    padding-left: 5px;
+    color: #444;
+    display: none; 
+}
+
+.faq.answer.active p {
+    display: block; 
+}
+
+a {
+    text-decoration: none; 
+}

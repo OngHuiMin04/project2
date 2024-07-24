@@ -1,0 +1,872 @@
+body {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/*image above*/
+.slider-wrapper {
+    width: 80%;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: auto;
+}
+
+.slide-container {
+    display: inline-flex;
+}
+
+.slide-container img {
+    width: 350px; /* Adjust the size of the images */
+    height: 300px; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between images */
+}
+
+/*columns*/
+.container {
+   display: flex;
+     /* Creates equal space between columns */
+}
+
+
+.column1{
+    margin-left: 130px;
+    width: 800px;
+}
+
+
+.linkrow{
+    display: flex;
+    align-items: center;
+}
+
+.linkrow a, .linkrow .separator {
+    margin: 0 5px;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.separator{
+    margin: 0 5px;
+}
+
+.linkrow a{
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.linkrow a:hover, .linkrow a:focus {
+    background-color: wheat;
+}
+
+.rentcategory{
+    background-color:#efe1d1  ; 
+    border-radius: 10px; 
+    padding: 5px 10px; 
+    display: inline-block;
+    
+}
+
+.icon-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+}
+
+.icon-container {
+    text-align: center;
+}
+
+.icon-container i {
+    font-size: 30px; /* Adjust the size as needed */
+    margin-bottom: 10px;
+}
+
+.icon-row p {
+    margin: 0;
+}
+
+
+.rounded-table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 700px;
+    margin: 20px auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+ .rounded-table td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.rounded-table tr:nth-child(even) {
+    background-color:cornsilk ;
+}
+.rounded-table tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+}
+.rounded-table tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+}
+.rounded-table tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+.rounded-table tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+
+.map-container {
+    width: 100%;
+    text-align: center;
+}
+.map-container iframe {
+    display: inline-block;
+    margin: 0 auto; /* Centers the iframe horizontally */
+}
+
+div.column {
+    width: 400px; /* Adjust as needed */
+    background-color: #eeeae7;
+    padding: 20px;
+    border: 1px solid #efe1d1 ;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+    align-items: center;
+}
+
+
+.oblong1 {
+    margin-left: 70px;
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 15px 60px; /* Adjusted padding for better spacing */
+    border-radius: 25px;
+    background-color:white; /* Lighter, soothing background color */
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold; /* Bold text */
+    box-shadow: 0 4px 8px grey; /* Enhanced shadow for better depth */
+    transition: transform 0.2s ease; /* Smooth transition for hover effect */
+   
+}
+
+.oblong1:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.oblong1 i {
+    margin-right: 10px; /* Space between icon and text */
+    vertical-align: middle; /* Vertically align icon with text */
+    font-size: 30px; /* Increase the icon size */
+    color: #25D366;;
+}
+
+.oblong2{
+    margin-left: 50px;
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 15px 60px; /* Adjusted padding for better spacing */
+    border-radius: 25px;
+    background-color:white; /* Lighter, soothing background color */
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold; /* Bold text */
+    box-shadow: 0 4px 8px grey; /* Enhanced shadow for better depth */
+    transition: transform 0.2s ease; /* Smooth transition for hover effect */
+}
+.oblong2:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.oblong2 i {
+    margin-right: 10px; /* Space between icon and text */
+    vertical-align: middle; /* Vertically align icon with text */
+    font-size: 30px; /* Increase the icon size */
+    color: red;
+}
+
+
+
+.rounded-box {
+    width: 300px;
+    height: 180px;
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    background-color: cornsilk; /* Light grey background */
+    border: 1px solid cornsilk; /* Light grey border */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow */
+   margin-left: 30px;
+}
+
+.rounded-box p {
+    margin: 5px 0; /* Adjusts the margin between paragraphs */
+    line-height: 1.5; /* Adjusts the line spacing */
+}
+
+.pricetable{
+    width: 280px;
+}
+
+.pricetable  tr:last-child td {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.pricetable td:nth-child(2){
+    text-align: right;
+}
+
+.pricetable tr:nth-child(4) td {
+    border-bottom: 1px dotted #000; /* Change color and thickness as needed */
+  }
+
+.clearfix {
+    clear: both;
+}
+
+/* contact box*/
+.contact-box {
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px grey ;
+    margin-left: 30px;
+}
+
+.contact-box h3 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.profile-section {
+    text-align: center;
+}
+
+.profile-picture {
+    width: 80px; /* Adjust size as needed */
+    height: 80px; /* Adjust size as needed */
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image covers the entire area */
+    margin-bottom: 10px; /* Add space between image and username */
+}
+
+.username {
+    font-size: 16px;
+    font-weight: bold;
+}
+.button-section {
+    text-align: center;
+    margin-top: 10px; /* Add margin for spacing */
+}
+.button-section a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: wheat;
+    border-radius: 5px;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.contact-box {
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px #543310 ;
+    margin-left: 30px;
+}
+
+.contact-box h3 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.profile-section {
+    text-align: center;
+}
+
+.profile-picture {
+    width: 80px; /* Adjust size as needed */
+    height: 80px; /* Adjust size as needed */
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image covers the entire area */
+    margin-bottom: 10px; /* Add space between image and username */
+}
+
+.username {
+    font-size: 16px;
+    font-weight: bold;
+}
+.button-section {
+    text-align: center;
+    margin-top: 10px; /* Add margin for spacing */
+}
+.button-section a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: wheat;
+    border-radius: 5px;
+}
+
+
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #543310;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .info-table th, .info-table td {
+    padding: 15px;
+    
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  .info-table th {
+    background-color: #6f4e37 ;
+    color: #eee4b1 ;
+    border-radius: 10px;
+    border-bottom: none;
+  }
+  .icon-cell {
+    width: 50px;
+    text-align: center;
+  }
+  .icon-cell i {
+    font-size: 24px;
+    color: #543310;
+  }
+  .item p {
+    margin: 0;
+  }
+
+/*APPLICATION FORM*/
+.appointmentbutton {
+    display: inline-block;
+    padding: 15px 30px; /* Adjusted padding to fit the text and icon */
+    font-size: 18px;
+    color: #fff;
+    background-color: rgb(4, 4, 4);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 10px;
+    width: 385px;
+}
+.appointmentbutton i {
+    margin-right: 10px; /* Spacing between the icon and the text */
+}
+
+/* Button hover effect */
+.appointmentbutton:hover {
+    background-color: #f5deb3 ;
+    color: #000;
+}
+
+/* Style for the pop-up modal */
+.appmodal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); /* Black with opacity */
+}
+
+/* Pop-up content */
+.appcontent {
+    background-color: #fefefe;
+    margin: 10% auto; /* Centered on screen */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 550px;
+    border-radius: 10px;
+    position: relative;
+}
+
+/* Close button */
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.appcontainer img {
+	max-width: 100%;
+	display: block;
+}
+
+.appcontainer input {
+	appearance: none;
+	border-radius: 0;
+}
+
+.appcontainer header{
+    position: relative;
+    font-size:24px ;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.appcontainer header::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    border-radius:8px;
+    background-color: #543310;
+}
+
+.input {
+	display: flex;
+	flex-direction: column-reverse;
+	position: relative;
+	padding-top: 1.5rem;
+}
+
+.input + .input {
+	margin-top: 1.5rem;
+}
+
+.input-label {
+	color: #8597a3;
+	position: absolute;
+	top: 1.5rem;
+	transition: .25s ease;
+}
+
+.input-field{
+	border: 0;
+	z-index: 1;
+	background-color: transparent;
+	border-bottom: 2px solid #eee; 
+	font: inherit;
+	font-size: 1.125rem;
+	padding: .25rem 0;
+}
+
+.input-field:focus, .input-field:valid {
+	outline: 0;
+	border-bottom-color: #543310;
+}
+
+.input-field:focus + .input-label, .input-field:valid + .input-label {
+	color: #543310;
+	transform: translateY(-1.5rem);
+}
+
+.input-field2:focus + .input-label2,
+.input-field2:not(:placeholder-shown) + .input-label2 {
+	transform: translateY(-20px);
+	font-size: 15px;
+}
+
+.input2 {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    padding-top: 1.5rem;
+}
+
+.input2 + .input2 {
+    margin-top: 1.5rem;
+}
+
+.input-label2 {
+    color: #8597a3;
+    position: absolute;
+    top: 1.5rem;
+    transition: .25s ease;
+}
+
+.input-field2 {
+    border: 0;
+    z-index: 1;
+    background-color: transparent;
+    border-bottom: 2px solid #eee; 
+    font: inherit;
+    font-size: 1.125rem;
+    padding: .25rem 0;
+}
+
+.input-field2:focus,
+.input-field2:valid {
+    outline: 0;
+    border-bottom-color: #543310;
+}
+
+.input-field2:focus + .input-label2,
+.input-field2:valid + .input-label2 {
+    color: #543310;
+    transform: translateY(-1.5rem);
+}
+
+.appaction {
+	margin-top: 2rem;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.appaction2 {
+	margin-top: 2rem;
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+}
+
+.next-button {
+	font: inherit;
+	font-size: 1.25rem;
+	padding:10px ;
+	width: 100px;
+	font-weight: 500;
+	background-color: #543310;
+	border-radius: 6px;
+	color: #FFF;
+	border: 0;
+    cursor: pointer;
+}
+
+.next-button:focus {
+	outline: 0;
+    cursor: pointer;
+}
+
+.action-button {
+	font: inherit;
+	font-size: 1.25rem;
+	padding: 5px;
+	width: 80%;
+	font-weight: 500;
+	background-color: #543310;
+	border-radius: 6px;
+	color: #FFF;
+	border: 0;
+	width: calc(100% - 50px);
+    cursor: pointer;
+}
+
+.action-button:focus {
+	outline: 0;
+    cursor: pointer;
+}
+
+
+  
+
+/*BOOKING FORM*/
+.bookingbutton {
+    display: inline-block;
+    padding: 15px 30px; /* Adjusted padding to fit the text and icon */
+    font-size: 18px;
+    color: #fff;
+    background-color: rgb(4, 4, 4);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 10px;
+    width: 385px;
+}
+
+.bookingbutton i {
+    margin-right: 10px; /* Spacing between the icon and the text */
+}
+
+.bookingbutton:hover {
+    background-color: wheat ;
+    color: #000;
+}
+
+.bookingmodal{
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); /* Black with opacity */
+}
+
+.bookingcontent{
+    background-color: #fefefe;
+    margin: 10% auto; /* Centered on screen */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 550px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bookclose{
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.bookclose:hover,
+.bookclose:focus {
+    color: black;
+    text-decoration: none;
+}
+
+.bookingcontainer {
+    padding: 20px;
+}
+
+.bookingcontainer header {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.bookingcontainer header::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    border-radius:8px;
+    background-color: #543310;
+}
+
+.bookingcontainer img{
+max-width: 100%;
+	display: block;
+}
+
+.step-content {
+    display: flex;
+}
+
+.step-left {
+    flex: 1;
+    padding-right: 20px; /* Adjust spacing between image and form */
+}
+
+.step-right {
+    flex: 1;
+}
+
+.step-right2 {
+    flex: 1;
+}
+
+.enter {
+	display: flex;
+	flex-direction: column-reverse;
+	position: relative;
+	padding-top: 1.5rem;
+}
+
+.enter + .enter {
+	margin-top: 1.5rem;
+}
+
+.enter-label {
+	color: #8597a3;
+	position: absolute;
+	top: 1.5rem;
+	transition: .25s ease;
+}
+
+.enter-field{
+	border: 0;
+	z-index: 1;
+	background-color: transparent;
+	border-bottom: 2px solid #eee; 
+	font: inherit;
+	font-size: 1.125rem;
+	padding: .25rem 0;
+}
+
+.enter-field:focus, .enter-field:valid {
+	outline: 0;
+	border-bottom-color: #543310;
+}
+
+.enter-field:focus + .enter-label, .enter-field:valid + .enter-label {
+	color: #543310;
+	transform: translateY(-1.5rem);
+}
+
+.enter-field2:focus + .enter-label2,
+.enter-field2:not(:placeholder-shown) + .enter-label2 {
+	transform: translateY(-20px);
+	font-size: 15px;
+}
+
+.enter2 {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    padding-top: 1.5rem;
+}
+
+.enter2 + .input2 {
+    margin-top: 1.5rem;
+}
+
+.enter-label2 {
+    color: #8597a3;
+    position: absolute;
+    top: 1.5rem;
+    transition: .25s ease;
+}
+
+.enter-field2 {
+    border: 0;
+    z-index: 1;
+    background-color: transparent;
+    border-bottom: 2px solid #eee; 
+    font: inherit;
+    font-size: 1.125rem;
+    padding: .25rem 0;
+}
+
+.enter-field2:focus,
+.enter-field2:valid {
+    outline: 0;
+    border-bottom-color: #543310;
+}
+
+.enter-field2:focus + .enter-label2,
+.enter-field2:valid + .enter-label2 {
+    color: #543310;
+    transform: translateY(-1.5rem);
+}
+
+.bookingnextbutton{
+    font: inherit;
+	font-size: 1.25rem;
+	padding:10px ;
+	width: 100px;
+    margin-top: 10px;
+    margin-left: 70px;
+	font-weight: 500;
+	background-color: #543310;
+	border-radius: 6px;
+	color: #FFF;
+	border: 0;
+    cursor: pointer;
+}
+
+.bookingnextbutton:focus {
+	outline: 0;
+}
+
+.bookingactionbutton{
+    font: inherit;
+	font-size: 1.25rem;
+	padding:10px ;
+	width: 160px;
+	font-weight: 500;
+	background-color: #543310;
+	border-radius: 6px;
+	color: #FFF;
+	border: 0;
+    cursor: pointer;
+}
+
+.bookingactionbutton:focus {
+outline: 0;
+}
+
+.bookback{
+    width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+
+.action-wrapper {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.action-wrapper i {
+    cursor: pointer;
+    margin-right: 10px; /* Adjust margin as needed */
+    font-size: 24px; /* Adjust icon size as needed */
+}
+.avatar {
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image covers the area and remains centered */
+    border: 2px solid #ddd; /* Optional: Add a border around the image */
+    box-shadow: 0 0 5px rgba(0,0,0,0.5); /* Optional: Add a subtle shadow for effect */
+}
+
+@media (max-width: 600px) {
+    .bookingcontent {
+        width: 100%;
+    }
+    
+    .step-content {
+        flex-direction: column;
+    }
+    
+    .step-left, .step-right {
+        padding: 0;
+    }
+}

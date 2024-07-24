@@ -1,0 +1,321 @@
+/* Common Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #fff4f4, #ffdfb7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 850px;
+    max-width: 100%;
+    min-height: 740px;
+}
+
+.container p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+
+.container span {
+    font-size: 12px;
+}
+
+.container a {
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+
+.container button {
+    background-color: #aa6d31;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.container button:hover {
+    background-color: #8f5826;
+}
+
+.container button.hidden {
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.container form {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+}
+
+.container input,
+.container select {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+.container input:hover,
+.container select:hover {
+    border-color: #999;
+}
+
+.container img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.sign-in {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.container.active .sign-in {
+    transform: translateX(100%);
+}
+
+.sign-up {
+    left: 0;
+    width: 50%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.container.active .sign-up {
+    transform: translateX(100%);
+    opacity: 1;
+    z-index: 5;
+    animation: move 0.6s;
+}
+
+@keyframes move {
+    0%, 49.99% {
+        opacity: 0;
+        z-index: 1;
+    }
+    50%, 100% {
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+.toggle-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+    border-radius: 150px 0 0 100px;
+    z-index: 1000;
+}
+
+.container.active .toggle-container {
+    transform: translateX(-100%);
+    border-radius: 0 150px 100px 0;
+}
+
+.toggle {
+    background-color: rgb(67, 89, 75);
+    height: 100%;
+    background: linear-gradient(to right, rgb(252, 221, 159), rgb(170, 109, 49));
+    color: #fff;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.container.active .toggle {
+    transform: translateX(50%);
+}
+
+.toggle-panel {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: all 0.6s ease-in-out;
+}
+
+.toggle-left {
+    transform: translateX(-200%);
+}
+
+.container.active .toggle-left {
+    transform: translateX(0);
+}
+
+.toggle-right {
+    right: 0;
+    transform: translateX(0);
+}
+
+.container.active .toggle-right {
+    transform: translateX(200%);
+}
+
+.phone_number {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 8px 0;
+}
+
+.phone_number .country-code {
+    background-color: #eee;
+    padding: 10px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    width: 80px; /* Adjust the width as needed */
+}
+
+.phone_number input[type="tel"] {
+    border-radius: 0 8px 8px 0;
+    width: 100%;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    font-size: 13px;
+    padding: 10px;
+    outline: none;
+}
+
+/* Password Input with Eye Icon */
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container .eye-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px; /* 调整眼睛图标距离输入框的右边距 */
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1; /* 确保眼睛图标位于上层 */
+}
+
+/* Password Input Style */
+.password-container input[type="password"] {
+    border: 1px solid #ccc;
+    padding: 10px 35px 10px 15px; /* 调整右侧 padding 以容纳眼睛图标 */
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+    position: relative; /* 确保相对定位 */
+    box-sizing: border-box; /* 让 padding 不影响输入框宽度 */
+}
+
+/* styles.css */
+.terms-label {
+    display: block;
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.terms-label a {
+    color: #1a73e8;
+    text-decoration: underline;
+}
+
+.terms-label a:hover {
+    text-decoration: none; /* 移除超链接的下划线 */
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkbox-text {
+    padding-left: 25px;
+}
+
+.checkbox-text:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -3px;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    background-color: #eee;
+    border: 1px solid #d9d9d9;
+}
+
+input[type="checkbox"]:checked + .checkbox-text:before {
+    content: '\2714'; /* Checkmark symbol */
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border-radius: 3px;
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    line-height: 18px;
+}
+
+
